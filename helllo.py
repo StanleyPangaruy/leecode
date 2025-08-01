@@ -1,0 +1,1 @@
+print('Hellow, World!')  # This is a simple print statement
