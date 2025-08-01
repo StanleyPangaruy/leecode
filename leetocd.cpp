@@ -7,4 +7,4 @@ int main() {
     cout << "My first commit for my leetcode repo.\n";
     
     return 0;
-}
+}   
