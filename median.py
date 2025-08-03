@@ -9,14 +9,14 @@ class Solution:
         merged.extend(nums2)
         merged.sort()
 
-        n = len(nums1)
-        m = len(nums2)
-
-        p = (n + m) % 2
+        # n = len(nums1)
+        # m = len(nums2)
 
         mergelen = len(merged)
+        oddeven = mergelen % 2
 
-        if p == 1:
+
+        if oddeven == 1:
             center = mergelen//2
             median = merged[center]
             return median
@@ -29,6 +29,6 @@ class Solution:
 if __name__ == "__main__":
     solution = Solution()
     nums1 = [1, 2]
-    nums2 = [3, 4]
+    nums2 = [3]
     result = solution.findMedianSortedArrays(nums1, nums2)
     print(f"The median of the two sorted arrays {nums1} and {nums2} is: {result}")
