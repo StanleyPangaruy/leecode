@@ -13,5 +13,5 @@ if __name__ == "__main__":
     solution = Solution()
     s = "PAYPALISHIRING"
     numRows = 3
-    result = solution.convert(s, numRows)
+    result = solution.convert(s, numRows)f
     print(f"The converted string is: {result}")
